@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CrazyLover ♡</title>
+
+    <meta name="description"
+        content="CrazyLover — overthinking everything, loving anyway.">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <!-- ================= BACKGROUND ================= -->
+
+    <div class="background"></div>
+    <div class="background-overlay"></div>
+    <div class="noise"></div>
+
+    <div id="particles"></div>
+
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <a href="#home" class="logo">
+            <span>♥</span>
+            CrazyLover
+        </a>
+
+
+        <nav>
+
+            <a href="#home">
+                home
+            </a>
+
+            <a href="#links">
+                links
+            </a>
+
+            <a href="#music">
+                music
+            </a>
+
+            <a href="#about">
+                about
+            </a>
+
+        </nav>
+
+
+        <!-- MINI MUSIC PLAYER -->
+
+        <button class="mini-player" id="miniPlayer">
+
+            <div class="mini-cover"></div>
+
+            <div class="mini-info">
+
+                <strong id="miniTitle">
+                    Zalima
+                </strong>
+
+                <small id="miniArtist">
+                    Arijit Singh
+                </small>
+
+            </div>
+
+            <div class="mini-wave">
+
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+
+            <span id="miniIcon">
+                ♫
+            </span>
+
+        </button>
+
+
+        <!-- MOBILE MENU -->
+
+        <button class="menu-button" id="menuButton">
+            ☰
+        </button>
+
+    </header>
+
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main id="home">
+
+
+        <!-- LEFT DECORATION -->
+
+        <div class="side-note left-note">
+
+            <span>just</span>
+            <span>a</span>
+
+            <strong>
+                crazy lover.
+            </strong>
+
+        </div>
+
+
+        <!-- RIGHT DECORATION -->
+
+        <div class="side-note right-note">
+
+            <span>good</span>
+            <span>music</span>
+            <span>brighter</span>
+            <span>days</span>
+
+            <strong>
+                &lt;3
+            </strong>
+
+        </div>
+
+
+
+        <!-- ================= THOUGHT CARD ================= -->
+
+        <div class="thought-card">
+
+            <small>—</small>
+
+            <p>
+                same<br>
+                thoughts
+            </p>
+
+            <div class="divider"></div>
+
+            <p>
+                different<br>
+                day
+            </p>
+
+            <div class="tiny-buttons">
+
+                <button id="minusBtn">
+                    −
+                </button>
+
+                <button id="plusBtn">
+                    +
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ================= TIME CARD ================= -->
+
+        <div class="time-card">
+
+            <small id="dateText">
+                Loading...
+            </small>
+
+            <strong id="clock">
+                --:--
+            </strong>
+
+            <p>
+                another day<br>
+                closer to something<br>
+                better.
+            </p>
+
+        </div>
+
+
+
+        <!-- ================= PROFILE CARD ================= -->
+
+        <section class="profile-card" id="links">
+
+
+            <!-- STATUS -->
+
+            <div class="status">
+                still here...
+            </div>
+
+
+            <!-- AVATAR -->
+
+            <div class="avatar-container">
+
+                <img
+                    src="assets/profile.png"
+                    class="avatar"
+                    alt="CrazyLover">
+
+                <div class="avatar-fallback">
+                    C
+                </div>
+
+                <span class="online"></span>
+
+            </div>
+
+
+            <!-- NAME -->
+
+            <h1>
+                CrazyLover
+            </h1>
+
+
+            <!-- BIO -->
+
+            <p class="bio">
+                overthinking everything,
+                loving anyway.
+            </p>
+
+
+            <!-- HEART -->
+
+            <div class="heart">
+                ♥
+            </div>
+
+
+            <!-- TAGS -->
+
+            <div class="tags">
+
+                <span>
+                    ✦ ECE @ IIIT-NR
+                </span>
+
+                <span>
+                    ♫ Music
+                </span>
+
+                <span>
+                    🎮 Games
+                </span>
+
+                <span>
+                    ♥ and you?
+                </span>
+
+            </div>
+
+
+
+            <!-- ================= SOCIAL LINKS ================= -->
+
+            <div class="links-list">
+
+
+                <!-- DISCORD -->
+
+                <a
+                    href="https://discord.com"
+                    class="profile-link"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <div class="link-icon">
+                        <i class="fa-brands fa-discord"></i>
+                    </div>
+
+                    <div class="link-text">
+
+                        <span class="link-title">
+                            Discord
+                        </span>
+
+                        <span class="link-subtitle">
+                            come hang out
+                        </span>
+
+                    </div>
+
+                    <span class="link-arrow">
+                        ↗
+                    </span>
+
+                </a>
+
+
+
+                <!-- YOUTUBE -->
+
+                <a
+                    href="#"
+                    class="profile-link"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <div class="link-icon">
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+
+                    <div class="link-text">
+
+                        <span class="link-title">
+                            YouTube
+                        </span>
+
+                        <span class="link-subtitle">
+                            music & stuff
+                        </span>
+
+                    </div>
+
+                    <span class="link-arrow">
+                        ↗
+                    </span>
+
+                </a>
+
+
+
+                <!-- SPOTIFY -->
+
+                <a
+                    href="#"
+                    class="profile-link"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <div class="link-icon">
+                        <i class="fa-brands fa-spotify"></i>
+                    </div>
+
+                    <div class="link-text">
+
+                        <span class="link-title">
+                            Spotify
+                        </span>
+
+                        <span class="link-subtitle">
+                            currently listening
+                        </span>
+
+                    </div>
+
+                    <span class="link-arrow">
+                        ↗
+                    </span>
+
+                </a>
+
+
+
+                <!-- INSTAGRAM -->
+
+                <a
+                    href="#"
+                    class="profile-link"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <div class="link-icon">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+
+                    <div class="link-text">
+
+                        <span class="link-title">
+                            Instagram
+                        </span>
+
+                        <span class="link-subtitle">
+                            random moments
+                        </span>
+
+                    </div>
+
+                    <span class="link-arrow">
+                        ↗
+                    </span>
+
+                </a>
+
+
+
+                <!-- GITHUB -->
+
+                <a
+                    href="#"
+                    class="profile-link"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <div class="link-icon">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+
+                    <div class="link-text">
+
+                        <span class="link-title">
+                            GitHub
+                        </span>
+
+                        <span class="link-subtitle">
+                            projects & stuff
+                        </span>
+
+                    </div>
+
+                    <span class="link-arrow">
+                        ↗
+                    </span>
+
+                </a>
+
+
+
+                <!-- EMAIL -->
+
+                <a
+                    href="mailto:your@email.com"
+                    class="profile-link">
+
+                    <div class="link-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+
+                    <div class="link-text">
+
+                        <span class="link-title">
+                            Email
+                        </span>
+
+                        <span class="link-subtitle">
+                            for collabs / work
+                        </span>
+
+                    </div>
+
+                    <span class="link-arrow">
+                        ↗
+                    </span>
+
+                </a>
+
+            </div>
+
+
+
+            <!-- ================= LITTLE THINGS ================= -->
+
+            <button
+                class="little-things-button"
+                id="littleThingsButton">
+
+                <span>
+                    ♡ little things about me
+                </span>
+
+                <span id="littleArrow">
+                    +
+                </span>
+
+            </button>
+
+
+            <div
+                class="little-things"
+                id="littleThings">
+
+
+                <div>
+                    🎸
+                    <span>guitar</span>
+                </div>
+
+
+                <div>
+                    🎧
+                    <span>music</span>
+                </div>
+
+
+                <div>
+                    🎮
+                    <span>games</span>
+                </div>
+
+
+                <div>
+                    ☕
+                    <span>late nights</span>
+                </div>
+
+
+                <div>
+                    ✍️
+                    <span>songwriting</span>
+                </div>
+
+
+                <div>
+                    🌙
+                    <span>overthinking</span>
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= MUSIC PLAYER ================= -->
+
+        <section
+            class="music-card"
+            id="music">
+
+
+            <div class="album-art"></div>
+
+
+            <div class="track-details">
+
+                <strong id="songTitle">
+                    Zalima
+                </strong>
+
+                <span id="songArtist">
+                    Arijit Singh
+                </span>
+
+
+                <!-- PROGRESS -->
+
+                <div
+                    class="progress-container"
+                    id="progressBar">
+
+                    <div
+                        class="progress-fill"
+                        id="progressFill">
+                    </div>
+
+                </div>
+
+
+                <div class="time-row">
+
+                    <span id="currentTime">
+                        0:00
+                    </span>
+
+                    <span id="totalTime">
+                        0:00
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- LIKE -->
+
+            <button
+                class="like-button"
+                id="likeBtn">
+
+                ♡
+
+            </button>
+
+
+            <!-- CONTROLS -->
+
+            <div class="player-controls">
+
+                <button id="shuffleBtn">
+                    ⤨
+                </button>
+
+                <button id="prevBtn">
+                    |◀
+                </button>
+
+                <button
+                    class="play-button"
+                    id="playBtn">
+
+                    ▶
+
+                </button>
+
+                <button id="nextBtn">
+                    ▶|
+
+                </button>
+
+                <button id="repeatBtn">
+                    ↻
+                </button>
+
+            </div>
+
+
+            <!-- VOLUME -->
+
+            <div class="volume-control">
+
+                <button
+                    class="volume-button"
+                    id="volumeBtn">
+
+                    🔊
+
+                </button>
+
+                <input
+                    type="range"
+                    id="volumeSlider"
+                    min="0"
+                    max="1"
+                    step="0.01"
+                    value="1">
+
+            </div>
+
+
+            <!-- AUDIO -->
+
+            <audio
+                id="audio"
+                src="assets/music.mp3"
+                preload="auto"
+                autoplay
+                muted
+                playsinline>
+            </audio>
+
+        </section>
+
+
+
+        <!-- ================= QUOTE ================= -->
+
+        <div class="quote">
+
+            “ maybe in another life,
+            things are simpler. ”
+
+        </div>
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-left">
+
+            <a href="#">
+                <i class="fa-brands fa-discord"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-spotify"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <span>
+                made by
+                <b>CrazyLover</b>
+            </span>
+
+        </div>
+
+
+        <div class="footer-right">
+
+            version 1.0<br>
+            just a crazy lover.
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- ================= ENTER SCREEN ================= -->
+
+    <div
+        class="enter-screen"
+        id="enterScreen">
+
+        <div class="enter-content">
+
+            <div class="enter-heart">
+                ♥
+            </div>
+
+            <h2>
+                CrazyLover
+            </h2>
+
+            <p>
+                click anywhere to enter
+            </p>
+
+            <span>
+                ♫
+            </span>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
